@@ -1,1 +1,345 @@
-/* место для вашего кода */
+.header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 92px 50px 96px 50px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.underline{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+
+.menu :first-child::marker {
+    content: "";
+}
+
+.nav{
+    align-self: center;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-image:url(/images/list_marker.png) ;
+    gap: 25px;
+    white-space: nowrap;
+}
+
+.menu li a, 
+.menu-footer li a {
+  display: block; 
+  text-decoration: none;
+  color: inherit; 
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-black{
+    width:148px;
+    height:105px;
+    align-self: center;
+    justify-self: center;
+}
+
+.address-header{
+    justify-self: end;
+    align-self: center;
+}
+.contacts{
+    list-style-type: none;
+    overflow-wrap: normal;
+    width:240px ;
+    height: 98px;
+}
+
+.cover{
+    max-width: 1100px;  
+    width: 100%;    
+    height: 757px;
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;    
+}
+
+.logo-text-position{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+"ono . ."
+". tebe ."
+". . nado";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 100px;
+  text-transform: uppercase;
+  width: 100%; 
+  height: 385px;
+  margin: 0 auto 207px auto; 
+  padding-top: 165px;
+  padding-left: 50px;  
+  padding-right: 50px;
+  letter-spacing: 0.3em;
+  box-sizing: border-box; 
+}
+
+.ono{
+  grid-area: ono;
+}
+
+.tebe{
+  grid-area: tebe;
+}
+
+.nado{
+  grid-area: nado;
+  margin-left:-85px ;
+  margin-top: 20px;
+}
+
+.description {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;      
+max-width: 1000px; 
+margin: 0 auto;   
+padding: 50px 50px;  
+box-sizing: border-box;
+}
+
+.p-description {
+  width: 637px;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  white-space: nowrap;
+  margin: 0;
+  font-weight: 400;
+  margin-right: 107px;
+  word-spacing: 15px
+}
+
+.bet {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 12px 32px 11px 31px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.logo-text-position,
+.description {
+  position: relative;
+  z-index: 2;
+}
+
+.lots{
+  padding: 180px 24px 120px 24px;
+}
+
+.title-lots{
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 0 0 27px 40px;
+}
+
+.card-lots{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-item {
+  width: 334px;
+  height: 596px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+.cinema-card {
+  background-image: url(/images/card-lot-01.jpg);
+}
+
+.book-card {
+  background-image: url(/images/card-lot-02.jpg);
+}
+
+.picture-card {
+  background-image: url(/images/card-lot-03.jpg);
+}
+
+.card-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.card-link {
+  text-decoration: none;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.title-card {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.card-info{
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 0px 0px 48px 0px;/*TODO текст на 2 карточке не правильно выглядит*/
+}
+
+
+
+.link-more{
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 30px 0 0 40px;
+  display: block;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom:180px ;
+}
+
+.background-logo-white{
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  align-content: center;
+  margin-left: 47px;
+  margin-top: 35px;
+}
+
+.logo-white{
+  width: 148px;
+  height: 114px;
+}
+
+.title-about{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 100px;
+  padding-top: 136px;
+}
+
+.about-info{
+  font-size:20px ;
+  font-weight:400 ;
+  display: block;
+}
+
+.paragraf{
+  margin-bottom: 20px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: 1fr;
+  padding: 0 50px 82px;
+}
+
+.address-footer{
+    justify-self: start;
+    align-self: center;
+    list-style-type:none;
+    overflow-wrap: normal;
+    width:240px ;
+    height: 98px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    align-self: start;
+    justify-self: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer_social {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+  gap: 48px;
+}
+
+.footer_social-img {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
