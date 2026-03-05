@@ -31,7 +31,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     list-style-type: circle;
-    gap: 25px;
+    gap: 32px;
     white-space: nowrap;
     padding: 0;
     margin: 0;
@@ -56,6 +56,7 @@ a {
     height: 105px;
     align-self: center;
     justify-self: center;
+    margin-right: 60px;
 }
 
 .address {
@@ -65,7 +66,7 @@ a {
     font-style: normal;
     list-style-type: none;
     overflow-wrap: normal;
-    width: 248px;
+    width: 240px;
     align-self: center;
 }
 
@@ -196,12 +197,11 @@ a {
 .card-lots-position {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     list-style-type: none;
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 25px;
 }
 
 .card-item {
