@@ -1,119 +1,121 @@
-.header{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    padding: 92px 50px 96px 50px;
-    font-size: 18px;
-    font-weight: 400;
-    width: 100%;
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  padding: 92px 50px 96px 50px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
 }
 
-.underline{
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    cursor: pointer;
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
 }
 
 .menu :first-child::marker {
-    content: "";
+  content: "";
 }
 
-.nav{
-    align-self: center;
+.nav {
+  align-self: center;
 }
+
 .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-image:url(/images/list_marker.png) ;
-    gap: 25px;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-image: url(/images/list_marker.png);
+  gap: 25px;
+  white-space: nowrap;
 }
 
-.menu li a, 
+.menu li a,
 .menu-footer li a {
-  display: block; 
+  display: block;
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
   cursor: pointer;
   margin: 0;
   padding: 0;
 }
 
-.logo-black{
-    width:148px;
-    height:105px;
-    align-self: center;
-    justify-self: center;
+.logo-black {
+  width: 148px;
+  height: 105px;
+  align-self: center;
+  justify-self: center;
 }
 
-.address-header{
-    justify-self: end;
-    align-self: center;
-}
-.contacts{
-    list-style-type: none;
-    overflow-wrap: normal;
-    width:240px ;
-    height: 98px;
+.address-header {
+  justify-self: end;
+  align-self: center;
 }
 
-.cover{
-    max-width: 1100px;  
-    width: 100%;    
-    height: 757px;
-    background-image: url(/images/cover.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    margin: 0 auto;    
+.contacts {
+  list-style-type: none;
+  overflow-wrap: normal;
+  width: 240px;
+  height: 98px;
 }
 
-.logo-text-position{
+.cover {
+  max-width: 1100px;
+  width: 100%;
+  height: 757px;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo-text-position {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-"ono . ."
-". tebe ."
-". . nado";
+    "ono . ."
+    ". tebe ."
+    ". . nado";
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 100px;
-  width: 100%; 
+  width: 100%;
   height: 385px;
-  margin: 0 auto 207px auto; 
+  margin: 0 auto 207px auto;
   padding-top: 165px;
-  padding-left: 50px;  
+  padding-left: 50px;
   padding-right: 50px;
   letter-spacing: 0.3em;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.ono{
+.ono {
   grid-area: ono;
 }
 
-.tebe{
+.tebe {
   grid-area: tebe;
 }
 
-.nado{
+.nado {
   grid-area: nado;
-  margin-left:-85px ;
+  margin-left: -85px;
   margin-top: 20px;
 }
 
 .description {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;      
-max-width: 1000px; 
-margin: 0 auto;   
-padding: 50px 50px;  
-box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 50px;
+  box-sizing: border-box;
 }
 
 .p-description {
@@ -126,7 +128,7 @@ box-sizing: border-box;
   margin: 0;
   font-weight: 400;
   margin-right: 107px;
-  word-spacing: 15px
+  word-spacing: 15px;
 }
 
 .bet {
@@ -161,18 +163,18 @@ box-sizing: border-box;
   z-index: 2;
 }
 
-.lots{
+.lots {
   padding: 180px 24px 120px 24px;
 }
 
-.title-lots{
+.title-lots {
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   padding: 0 0 27px 40px;
 }
 
-.card-lots{
+.card-lots {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -218,7 +220,7 @@ box-sizing: border-box;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .card-link {
@@ -240,16 +242,14 @@ box-sizing: border-box;
   text-underline-offset: 4px;
 }
 
-.card-info{
+.card-info {
   font-weight: 400;
   font-size: 20px;
   color: #FFFFFF;
-  padding: 0px 0px 48px 0px;/*TODO текст на 2 карточке не правильно выглядит*/
+  padding: 0px 0px 48px 0px;
 }
 
-
-
-.link-more{
+.link-more {
   color: black;
   font-size: 20px;
   font-weight: 400;
@@ -257,13 +257,13 @@ box-sizing: border-box;
   display: block;
 }
 
-.about{
+.about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding-bottom:180px ;
+  padding-bottom: 180px;
 }
 
-.background-logo-white{
+.background-logo-white {
   background-color: black;
   width: 240px;
   height: 240px;
@@ -277,12 +277,12 @@ box-sizing: border-box;
   margin-top: 35px;
 }
 
-.logo-white{
+.logo-white {
   width: 148px;
   height: 114px;
 }
 
-.title-about{
+.title-about {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -290,43 +290,43 @@ box-sizing: border-box;
   padding-top: 136px;
 }
 
-.about-info{
-  font-size:20px ;
-  font-weight:400 ;
+.about-info {
+  font-size: 20px;
+  font-weight: 400;
   display: block;
 }
 
-.paragraf{
+.paragraf {
   margin-bottom: 20px;
 }
 
-.footer{
+.footer {
   display: grid;
-  grid-template-columns: repeat(3 , 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   padding: 0 50px 82px;
 }
 
-.address-footer{
-    justify-self: start;
-    align-self: center;
-    list-style-type:none;
-    overflow-wrap: normal;
-    width:240px ;
-    height: 98px;
-    font-size: 18px;
-    font-weight: 400;
+.address-footer {
+  justify-self: start;
+  align-self: center;
+  list-style-type: none;
+  overflow-wrap: normal;
+  width: 240px;
+  height: 98px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.menu-footer{
-    display: flex;
-    flex-direction: column;
-    list-style-type:none;
-    align-self: start;
-    justify-self: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 400;
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-self: start;
+  justify-self: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer_social {
